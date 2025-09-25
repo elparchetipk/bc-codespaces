@@ -41,13 +41,25 @@ echo "✅ Dependencias de sistema instaladas"
 # ¿QUÉ? Configuramos el directorio de trabajo
 # ¿POR QUÉ? Necesitamos trabajar desde el directorio del proyecto
 # ¿PARA QUÉ? Asegurar que el entorno virtual se cree en el lugar correcto
-WORKSPACE_DIR="/workspaces/bc-codespaces"
-if [ -d "$WORKSPACE_DIR" ]; then
-    cd "$WORKSPACE_DIR"
-    echo "📁 Directorio de trabajo: $WORKSPACE_DIR"
+
+# Detectar si estamos en Codespaces o local
+if [ -d "/workspaces/bc-codespaces" ]; then
+    # Estamos en GitHub Codespaces
+    WORKSPACE_DIR="/workspaces/bc-codespaces"
+    echo "🐳 GitHub Codespaces detectado"
+elif [ -f "$(dirname "$0")/../README.md" ]; then
+    # Estamos en el directorio del proyecto (local o script ejecutado desde scripts/)
+    WORKSPACE_DIR="$(dirname "$0")/.."
+    WORKSPACE_DIR="$(realpath "$WORKSPACE_DIR")"
+    echo "� Entorno local detectado"
 else
-    echo "⚠️  Directorio de workspace no encontrado, usando directorio actual"
+    # Usar directorio actual como fallback
+    WORKSPACE_DIR="$(pwd)"
+    echo "⚠️  Usando directorio actual como workspace"
 fi
+
+cd "$WORKSPACE_DIR"
+echo "📁 Directorio de trabajo: $WORKSPACE_DIR"
 
 # ¿QUÉ? Creamos entorno virtual Python con venv
 # ¿POR QUÉ? Aislamiento de dependencias es fundamental para desarrollo

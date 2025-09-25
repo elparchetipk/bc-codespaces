@@ -8,6 +8,7 @@
 
 ![Subtitle](assets/bootcamp-subtitle.svg)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/tu-usuario/bc-codespaces?quickstart=1)
 [![GitHub Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github&logoColor=white)](https://github.com/codespaces)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Python 3.13+](https://img.shields.io/badge/Python-3.13+-blue?logo=python&logoColor=white)](https://www.python.org/)
@@ -297,6 +298,27 @@ tail -f logs/auto-commit.log
 # Reconfigurar
 ./scripts/setup-auto-commit.sh
 ```
+
+#### **🖥️ VS Code mostrando múltiples pestañas**
+
+```bash
+# Solución 1: Aplicar configuraciones automáticamente
+./scripts/setup-vscode-local.sh
+
+# Solución 2: Forzar configuración (si persiste el problema)
+./scripts/fix-vscode-tabs.sh
+```
+
+**¿Por qué pasa esto?**
+
+- VS Code local no aplica automáticamente la configuración del devcontainer
+- Las configuraciones de workspace pueden no cargarse correctamente
+
+**Configuraciones aplicadas:**
+
+- `workbench.editor.limit.enabled: true` - Limita pestañas activas
+- `workbench.editor.limit.value: 1` - Solo 1 pestaña visible
+- `workbench.editor.showTabs: "single"` - Mostrar tabs en modo single
 
 ### **🆘 Obtener ayuda**
 

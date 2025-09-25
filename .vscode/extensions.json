@@ -1,0 +1,28 @@
+{
+  // ¿QUÉ? Extensiones recomendadas para el bootcamp FastAPI
+  // ¿POR QUÉ? Garantizar que todos tengan las mismas herramientas
+  // ¿PARA QUÉ? Optimizar el desarrollo Python y FastAPI
+  "recommendations": [
+    // Python essentials
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "charliermarsh.ruff",
+    "ms-python.pylint",
+
+    // FastAPI y API testing
+    "ms-vscode.vscode-thunder-client",
+
+    // Formato y configuración
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+
+    // Git y colaboración
+    "eamodio.gitlens",
+
+    // Markdown para documentación
+    "yzhang.markdown-all-in-one",
+
+    // Docker (para Codespaces)
+    "ms-vscode-remote.remote-containers"
+  ]
+}

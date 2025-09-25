@@ -1,4 +1,7 @@
 {
+  // ¿QUÉ? Configuraciones de tema y apariencia (Peacock)
+  // ¿POR QUÉ? Identificación visual del proyecto bootcamp
+  // ¿PARA QUÉ? Diferencias este workspace de otros proyectos
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#7df4d4",
     "activityBar.background": "#7df4d4",
@@ -19,5 +22,63 @@
     "titleBar.inactiveBackground": "#4ef0c599",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#4ef0c5"
+  "peacock.color": "#4ef0c5",
+
+  // ¿QUÉ? Configuraciones para una sola pestaña activa
+  // ¿POR QUÉ? Optimizar el flujo de trabajo y reducir distracciones
+  // ¿PARA QUÉ? Enfocar la atención en un archivo a la vez
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 1,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.focusRecentEditorAfterClose": true,
+
+  // ¿QUÉ? Configuraciones de Python para el bootcamp
+  // ¿POR QUÉ? Optimizar el desarrollo con FastAPI y Python 3.13+
+  // ¿PARA QUÉ? Mantener consistencia con el ambiente de Codespaces
+  "python.defaultInterpreterPath": "./venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // ¿QUÉ? Exclusión de archivos innecesarios
+  // ¿POR QUÉ? Mantener el explorer limpio y mejorar performance
+  // ¿PARA QUÉ? Enfocarse solo en archivos relevantes del proyecto
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/node_modules": true,
+    "**/.git": false
+  },
+
+  // ¿QUÉ? Exclusiones del watcher de archivos
+  // ¿POR QUÉ? Optimizar rendimiento evitando watchear archivos innecesarios
+  // ¿PARA QUÉ? Mejorar la velocidad de VS Code en proyectos grandes
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/__pycache__/**": true
+  },
+
+  // ¿QUÉ? Configuraciones del terminal integrado
+  // ¿POR QUÉ? Optimizar el ambiente de desarrollo Python
+  // ¿PARA QUÉ? Facilitar el trabajo con el entorno virtual y FastAPI
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}/src"
+  },
+
+  // ¿QUÉ? Configuraciones del explorer
+  // ¿POR QUÉ? Mejorar la navegación de archivos del proyecto
+  // ¿PARA QUÉ? Facilitar el trabajo con la estructura del bootcamp
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false
 }
