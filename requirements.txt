@@ -1,0 +1,116 @@
+# ¿QUÉ? Dependencias principales para FastAPI Bootcamp
+# ¿POR QUÉ? Definir exactamente qué librerías necesita el proyecto
+# ¿PARA QUÉ? Asegurar reproducibilidad y consistencia entre entornos
+
+# FastAPI Framework y servidor ASGI
+# ¿QUÉ? Framework web moderno para Python con tipo hints
+# ¿POR QUÉ? Base del proyecto - API REST moderna y rápida
+# ¿PARA QUÉ? Desarrollo de API profesional con documentación automática
+fastapi==0.104.1
+
+# ¿QUÉ? Servidor ASGI de alto rendimiento para FastAPI
+# ¿POR QUÉ? Requerido para ejecutar aplicaciones FastAPI en producción
+# ¿PARA QUÉ? Servir la API con recarga automática en desarrollo
+uvicorn[standard]==0.24.0
+
+# Base de Datos y ORM
+# ¿QUÉ? ORM moderno para Python con soporte async
+# ¿POR QUÉ? Interacción segura y eficiente con bases de datos
+# ¿PARA QUÉ? Operaciones CRUD y migraciones automatizadas
+sqlalchemy==2.0.23
+
+# ¿QUÉ? Driver async para SQLite
+# ¿POR QUÉ? SQLite es ideal para desarrollo y bootcamp
+# ¿PARA QUÉ? Base de datos sin configuración adicional
+aiosqlite==0.19.0
+
+# ¿QUÉ? Herramienta de migraciones de base de datos
+# ¿POR QUÉ? Gestión profesional de cambios en esquema de BD
+# ¿PARA QUÉ? Control de versiones de la estructura de datos
+alembic==1.12.1
+
+# Validación y Serialización
+# ¿QUÉ? Validación de datos con type hints
+# ¿POR QUÉ? Validación automática de entrada y salida de API
+# ¿PARA QUÉ? Asegurar integridad de datos y documentación
+pydantic==2.5.0
+
+# ¿QUÉ? Soporte para formularios multipart
+# ¿POR QUÉ? Necesario para upload de archivos en FastAPI
+# ¿PARA QUÉ? Manejo completo de formularios web
+python-multipart==0.0.6
+
+# Autenticación y Seguridad
+# ¿QUÉ? Manejo de tokens JWT y criptografía
+# ¿POR QUÉ? Autenticación segura en APIs REST
+# ¿PARA QUÉ? Sistema de login y autorización profesional
+python-jose[cryptography]==3.3.0
+
+# ¿QUÉ? Librería para hash de contraseñas
+# ¿POR QUÉ? Almacenamiento seguro de credenciales
+# ¿PARA QUÉ? Autenticación de usuarios con bcrypt
+passlib[bcrypt]==1.7.4
+
+# Testing y Calidad de Código
+# ¿QUÉ? Framework de testing para Python
+# ¿POR QUÉ? Testing es fundamental para código de calidad
+# ¿PARA QUÉ? Automatizar pruebas unitarias e integración
+pytest==7.4.3
+
+# ¿QUÉ? Plugin de pytest para funciones async
+# ¿POR QUÉ? Testear código asíncrono de FastAPI
+# ¿PARA QUÉ? Cobertura completa de testing async
+pytest-asyncio==0.21.1
+
+# ¿QUÉ? Cliente HTTP async para testing
+# ¿POR QUÉ? Realizar requests HTTP en tests de API
+# ¿PARA QUÉ? Testing completo de endpoints
+httpx==0.25.2
+
+# ¿QUÉ? Plugin de pytest para medir cobertura de código
+# ¿POR QUÉ? Monitorear qué porcentaje del código está testeado
+# ¿PARA QUÉ? Asegurar calidad y completitud de tests
+pytest-cov==4.1.0
+
+# Formateo y Linting
+# ¿QUÉ? Formateador automático de código Python
+# ¿POR QUÉ? Mantener estilo consistente en todo el proyecto
+# ¿PARA QUÉ? Código profesional y legible automáticamente
+black==23.11.0
+
+# ¿QUÉ? Organizador de imports
+# ¿POR QUÉ? Imports ordenados y consistentes
+# ¿PARA QUÉ? Código más limpio y fácil de mantener
+isort==5.12.0
+
+# ¿QUÉ? Linter ultra-rápido para Python
+# ¿POR QUÉ? Detección temprana de errores y problemas de estilo
+# ¿PARA QUÉ? Calidad de código profesional
+ruff==0.1.6
+
+# Utilidades de Desarrollo
+# ¿QUÉ? Variables de entorno desde archivos .env
+# ¿POR QUÉ? Gestión segura de configuraciones sensibles
+# ¿PARA QUÉ? Separar configuración del código
+python-dotenv==1.0.0
+
+# ¿QUÉ? Logging avanzado y estructurado
+# ¿POR QUÉ? Mejores logs que print() para debugging
+# ¿PARA QUÉ? Monitoreo y troubleshooting profesional  
+loguru==0.7.2
+
+# ¿QUÉ? Generación de datos falsos para testing
+# ¿POR QUÉ? Crear datos de prueba realistas
+# ¿PARA QUÉ? Testing más completo y realista
+faker==20.1.0
+
+# Documentación
+# ¿QUÉ? Generador de documentación desde código
+# ¿POR QUÉ? Documentación siempre actualizada
+# ¿PARA QUÉ? Documentación técnica profesional
+mkdocs==1.5.3
+
+# ¿QUÉ? Tema material para MkDocs  
+# ¿POR QUÉ? Documentación moderna y atractiva
+# ¿PARA QUÉ? Presentación profesional de la documentación
+mkdocs-material==9.4.8

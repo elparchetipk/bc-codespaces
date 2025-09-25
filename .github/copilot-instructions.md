@@ -87,7 +87,7 @@ Eres el asistente IA para un bootcamp intensivo de **GitHub Codespaces con FastA
 # .devcontainer/devcontainer.json - Optimizado para Free Tier
 {
   'name': 'FastAPI Bootcamp - Optimized',
-  'image': 'python:3.13-slim', # Imagen ligera
+  'image': 'python:3.13-alpine', # Imagen ultra-ligera (Alpine Linux)
   'features':
     {
       'ghcr.io/devcontainers/features/docker-in-docker:2': {},
@@ -98,10 +98,24 @@ Eres el asistente IA para un bootcamp intensivo de **GitHub Codespaces con FastA
               'ms-python.black-formatter', # Formateo
               'charliermarsh.ruff', # Linting rápido
             ] } },
-  'postCreateCommand': 'pip install -r requirements.txt',
+  'postCreateCommand': 'apk add --no-cache build-base && python -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt',
   'shutdownAction': 'stop', # Optimiza el reinicio
 }
 ```
+
+#### ¿Por qué Alpine Linux?
+
+- **¿QUÉ?** Distribución Linux ultra-minimalista basada en musl libc
+- **¿POR QUÉ?** Consume ~50% menos recursos que python:3.13-slim
+- **¿PARA QUÉ?** Maximizar el tiempo disponible en el Free Tier de Codespaces
+
+#### Comparación de Imágenes Python:
+
+| Imagen               | Tamaño | Recursos  | Mejor para          |
+| -------------------- | ------ | --------- | ------------------- |
+| `python:3.13-alpine` | ~45MB  | Mínimos   | **Free Tier** ⭐    |
+| `python:3.13-slim`   | ~120MB | Moderados | Desarrollo regular  |
+| `python:3.13`        | ~380MB | Altos     | Producción completa |
 
 ### Configuración Automática:
 
@@ -109,7 +123,7 @@ Eres el asistente IA para un bootcamp intensivo de **GitHub Codespaces con FastA
 # .devcontainer/devcontainer.json - Configuración del entorno
 {
   'name': 'FastAPI Bootcamp',
-  'image': 'python:3.13-slim',
+  'image': 'python:3.13-alpine',
   'features':
     {
       'ghcr.io/devcontainers/features/docker-in-docker:2': {},
@@ -127,6 +141,7 @@ Eres el asistente IA para un bootcamp intensivo de **GitHub Codespaces con FastA
             ],
         },
     },
+  'postCreateCommand': 'apk add --no-cache build-base && python -m venv venv && source venv/bin/activate && pip install --upgrade pip',
 }
 ```
 

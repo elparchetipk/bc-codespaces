@@ -1,0 +1,98 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- ¿QUÉ? Fondo del logo con gradiente moderno -->
+  <!-- ¿POR QUÉ? Un fondo atractivo mejora la presentación visual -->
+  <!-- ¿PARA QUÉ? Crear identidad visual profesional para el bootcamp -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- ¿QUÉ? Rectángulo de fondo con bordes redondeados -->
+  <!-- ¿POR QUÉ? Apariencia moderna y profesional -->
+  <!-- ¿PARA QUÉ? Marco visual para el contenido del logo -->
+  <rect width="600" height="200" rx="15" ry="15" fill="url(#bgGradient)" stroke="#4f46e5" stroke-width="2"/>
+  
+  <!-- ¿QUÉ? Elementos decorativos - círculos de fondo -->
+  <!-- ¿POR QUÉ? Añadir dinamismo y modernidad al diseño -->
+  <!-- ¿PARA QUÉ? Crear una atmósfera tecnológica -->
+  <circle cx="520" cy="40" r="30" fill="#ffffff" opacity="0.1"/>
+  <circle cx="550" cy="80" r="20" fill="#ffffff" opacity="0.15"/>
+  <circle cx="80" cy="160" r="25" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- ¿QUÉ? Título principal del bootcamp -->
+  <!-- ¿POR QUÉ? Identifica claramente el programa educativo -->
+  <!-- ¿PARA QUÉ? Branding y reconocimiento inmediato -->
+  <text x="300" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="url(#textGradient)">
+    BOOTCAMP
+  </text>
+  
+  <!-- ¿QUÉ? Subtítulo con tecnologías principales -->
+  <!-- ¿POR QUÉ? Especifica las tecnologías que se aprenderán -->
+  <!-- ¿PARA QUÉ? Claridad sobre el contenido técnico -->
+  <text x="300" y="95" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#e0e7ff">
+    GitHub Codespaces &amp; FastAPI
+  </text>
+  
+  <!-- ¿QUÉ? Línea decorativa separadora -->
+  <!-- ¿POR QUÉ? Separar visualmente título de subtítulo -->
+  <!-- ¿PARA QUÉ? Mejorar la organización visual -->
+  <line x1="200" y1="110" x2="400" y2="110" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- ¿QUÉ? Descripción del programa -->
+  <!-- ¿POR QUÉ? Información clave sobre duración y modalidad -->
+  <!-- ¿PARA QUÉ? Expectativas claras para los participantes -->
+  <text x="300" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e0e7ff">
+    🐍 Python 3.13+ • ☁️ Desarrollo en la Nube • 🚀 12 Horas Intensivas
+  </text>
+  
+  <!-- ¿QUÉ? Eslogan motivacional -->
+  <!-- ¿POR QUÉ? Inspirar y motivar a los participantes -->
+  <!-- ¿PARA QUÉ? Crear conexión emocional con el programa -->
+  <text x="300" y="155" font-family="Arial, sans-serif" font-size="12" font-style="italic" text-anchor="middle" fill="#c7d2fe">
+    "Desarrollo Profesional en la Nube Sin Límites"
+  </text>
+  
+  <!-- ¿QUÉ? Íconos decorativos tecnológicos -->
+  <!-- ¿POR QUÉ? Representación visual de las tecnologías -->
+  <!-- ¿PARA QUÉ? Reforzar el mensaje técnico del bootcamp -->
+  
+  <!-- Ícono GitHub -->
+  <g transform="translate(50, 30)">
+    <circle cx="0" cy="0" r="20" fill="#24292e" opacity="0.8"/>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="white">⚡</text>
+  </g>
+  
+  <!-- Ícono Python -->
+  <g transform="translate(50, 100)">
+    <circle cx="0" cy="0" r="20" fill="#3776ab" opacity="0.8"/>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">🐍</text>
+  </g>
+  
+  <!-- Ícono Cloud -->
+  <g transform="translate(530, 140)">
+    <circle cx="0" cy="0" r="20" fill="#0ea5e9" opacity="0.8"/>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">☁️</text>
+  </g>
+  
+  <!-- Ícono Docker -->
+  <g transform="translate(470, 50)">
+    <circle cx="0" cy="0" r="20" fill="#2496ed" opacity="0.8"/>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">🐳</text>
+  </g>
+  
+  <!-- ¿QUÉ? Información de duración en la esquina -->
+  <!-- ¿POR QUÉ? Destacar el aspecto intensivo del programa -->
+  <!-- ¿PARA QUÉ? Información clave visible de inmediato -->
+  <g transform="translate(450, 170)">
+    <rect width="140" height="25" rx="12" fill="#4f46e5" opacity="0.8"/>
+    <text x="70" y="17" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+      2 SEMANAS • 12 HORAS
+    </text>
+  </g>
+</svg>

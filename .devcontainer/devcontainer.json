@@ -1,0 +1,122 @@
+{
+  "name": "FastAPI Bootcamp - Optimized Free Tier",
+
+  // ¿QUÉ? Imagen base ultra-ligera de Python con Alpine Linux
+  // ¿POR QUÉ? Alpine consume ~50% menos recursos que Debian/Ubuntu
+  // ¿PARA QUÉ? Maximizar tiempo disponible en Codespaces Free Tier (120h/mes)
+  "image": "python:3.13-alpine",
+
+  // ¿QUÉ? Características adicionales del contenedor
+  // ¿POR QUÉ? Docker-in-Docker permite containerización avanzada
+  // ¿PARA QUÉ? Aprender deployment y orquestación en la nube
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+
+  // ¿QUÉ? Configuraciones específicas de VS Code
+  // ¿POR QUÉ? Extensiones esenciales para desarrollo Python profesional
+  // ¿PARA QUÉ? Entorno de desarrollo completo y productivo
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "charliermarsh.ruff",
+        "ms-python.pylint",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+        "ms-vscode.vscode-thunder-client"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "./venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "python.formatting.provider": "black",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        },
+        "files.exclude": {
+          "**/__pycache__": true,
+          "**/*.pyc": true
+        },
+        // ¿QUÉ? Configuraciones de optimización de recursos para Free Tier
+        // ¿POR QUÉ? Limitar recursos utilizados por VS Code en Codespaces
+        // ¿PARA QUÉ? Maximizar tiempo disponible y performance del editor
+        "workbench.editor.limit.enabled": true,
+        "workbench.editor.limit.value": 1,
+        "workbench.editor.limit.perEditorGroup": true,
+        "workbench.editor.showTabs": "single",
+        "workbench.editor.enablePreview": false,
+        "workbench.editor.enablePreviewFromQuickOpen": false
+      }
+    },
+    // ¿QUÉ? Configuración específica para Codespaces
+    // ¿POR QUÉ? Optimizar la experiencia específicamente en GitHub
+    // ¿PARA QUÉ? Aprovechar todas las funcionalidades de Codespaces
+    "codespaces": {
+      "openFiles": ["README.md", "src/main.py"]
+    }
+  },
+
+  // ¿QUÉ? Comandos ejecutados al crear el contenedor
+  // ¿POR QUÉ? Automatizar la configuración completa del entorno
+  // ¿PARA QUÉ? Tener un ambiente listo para desarrollo inmediatamente
+  "postCreateCommand": "chmod +x scripts/*.sh && ./scripts/setup-python-env.sh",
+
+  // ¿QUÉ? Puertos a exponer del contenedor
+  // ¿POR QUÉ? FastAPI por defecto usa puerto 8000
+  // ¿PARA QUÉ? Permitir acceso web a la aplicación en desarrollo
+  "forwardPorts": [8000, 8080],
+  "portsAttributes": {
+    "8000": {
+      "label": "FastAPI Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  // ¿QUÉ? Configuración de comportamiento al pausar
+  // ¿POR QUÉ? Optimizar el tiempo de reinicio en Codespaces
+  // ¿PARA QUÉ? Gestión eficiente de recursos del Free Tier
+  "shutdownAction": "stopContainer",
+
+  // ¿QUÉ? Variables de entorno para el contenedor
+  // ¿POR QUÉ? Configurar el entorno de desarrollo específico
+  // ¿PARA QUÉ? Optimizar la experiencia de desarrollo Python
+  "containerEnv": {
+    "PYTHONPATH": "/workspaces/bc-codespaces/src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1"
+  },
+
+  // ¿QUÉ? Configuración de montajes del sistema de archivos
+  // ¿POR QUÉ? Optimizar performance y persistencia de datos
+  // ¿PARA QUÉ? Mejorar velocidad de desarrollo y I/O
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+  ],
+
+  // ¿QUÉ? Configuración de recursos del contenedor
+  // ¿POR QUÉ? Optimizar para máquinas de 2-core del Free Tier
+  // ¿PARA QUÉ? Maximizar eficiencia y tiempo disponible
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb",
+    "storage": "10gb"
+  },
+
+  // ¿QUÉ? Comandos de ciclo de vida del contenedor
+  // ¿POR QUÉ? Automatizar tareas repetitivas de desarrollo
+  // ¿PARA QUÉ? Mejorar productividad y consistencia
+  "postStartCommand": "echo '🚀 Codespace listo! Ejecuta: source venv/bin/activate'",
+
+  // ¿QUÉ? Usuario por defecto en el contenedor
+  // ¿POR QUÉ? Evitar problemas de permisos con archivos
+  // ¿PARA QUÉ? Simplificar la gestión de archivos y Git
+  "remoteUser": "root"
+}
