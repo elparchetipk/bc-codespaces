@@ -1,0 +1,1 @@
+crear readme.md principal del proyecto
