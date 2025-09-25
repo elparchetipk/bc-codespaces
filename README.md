@@ -8,7 +8,7 @@
 
 ![Subtitle](assets/bootcamp-subtitle.svg)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/tu-usuario/bc-codespaces?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/elparchetipk/bc-codespaces?quickstart=1)
 [![GitHub Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github&logoColor=white)](https://github.com/codespaces)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Python 3.13+](https://img.shields.io/badge/Python-3.13+-blue?logo=python&logoColor=white)](https://www.python.org/)
