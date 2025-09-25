@@ -1,35 +1,12 @@
 # 🚀 Bootcamp GitHub Codespaces & FastAPI
 
-<div align="center">
+<!-- ¿QUÉ? Banner principal del bootcamp -->
+<!-- ¿POR QUÉ? Identidad visual clara y profesional -->
+<!-- ¿PARA QUÉ? Atraer y contextualizar el contenido del bootcamp -->
 
-```
-    ╔══════════════════════════════════════════════════════════════╗
-    ║                                                              ║
-    ║    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║    ░░  ██████╗  ██████╗       ██████╗ ██████╗ ██████╗ ░░   ║
-    ║    ░░  ██╔══██╗██╔════╝      ██╔════╝██╔═══██╗██╔══██╗░░   ║
-    ║    ░░  ██████╔╝██║           ██║     ██║   ██║██║  ██║░░   ║
-    ║    ░░  ██╔══██╗██║           ██║     ██║   ██║██║  ██║░░   ║
-    ║    ░░  ██████╔╝╚██████╗      ╚██████╗╚██████╔╝██████╔╝░░   ║
-    ║    ░░  ╚═════╝  ╚═════╝       ╚═════╝ ╚═════╝ ╚═════╝ ░░   ║
-    ║    ░░                                                  ░░   ║
-    ║    ░░     ██████╗ ██████╗ ██████╗ ███████╗███████╗    ░░   ║
-    ║    ░░    ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝    ░░   ║
-    ║    ░░    ██║     ██║   ██║██║  ██║█████╗  ███████╗    ░░   ║
-    ║    ░░    ██║     ██║   ██║██║  ██║██╔══╝  ╚════██║    ░░   ║
-    ║    ░░    ╚██████╗╚██████╔╝██████╔╝███████╗███████║    ░░   ║
-    ║    ░░     ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝    ░░   ║
-    ║    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║                                                              ║
-    ║           🐍 FastAPI + 🐳 GitHub Codespaces                  ║
-    ║              Desarrollo en la Nube Sin Límites              ║
-    ╚══════════════════════════════════════════════════════════════╝
-```
+![Bootcamp GitHub Codespaces & FastAPI](assets/bootcamp-logo.svg)
 
-<!-- ¿QUÉ? Logo principal del bootcamp en formato SVG -->
-<!-- ¿POR QUÉ? SVG es escalable y profesional, mejor que ASCII -->
-<!-- ¿PARA QUÉ? Identidad visual moderna y atractiva -->
-<img src="assets/bootcamp-logo.svg" alt="Bootcamp GitHub Codespaces & FastAPI" width="600">
+![Subtitle](assets/bootcamp-subtitle.svg)
 
 [![GitHub Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github&logoColor=white)](https://github.com/codespaces)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -37,7 +14,9 @@
 [![Alpine Linux](https://img.shields.io/badge/Alpine-Linux-0D597F?logo=alpine-linux&logoColor=white)](https://alpinelinux.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-**Bootcamp Intensivo de 12 horas | 2 jornadas de 6 horas | 2 semanas**
+## ⏱️ Duración del Bootcamp
+
+Bootcamp Intensivo de 12 horas distribuidas en 2 jornadas de 6 horas durante 2 semanas
 
 </div>
 
@@ -60,7 +39,7 @@ Un programa intensivo para aprender **desarrollo de APIs REST modernas** usando 
 
 ### **Día 1 (6 horas) - Fundamentos y Setup**
 
-```
+```text
 09:00-10:30 │ Configuración de GitHub Codespaces
 10:45-12:00 │ Fundamentos de FastAPI
 13:00-14:30 │ Estructura de proyecto y mejores prácticas
@@ -69,7 +48,7 @@ Un programa intensivo para aprender **desarrollo de APIs REST modernas** usando 
 
 ### **Día 2 (6 horas) - Avanzado y Producción**
 
-```
+```text
 09:00-10:30 │ Middleware y seguridad
 10:45-12:00 │ Autenticación y autorización JWT
 13:00-14:30 │ GitHub Codespaces avanzado + Docker en la nube
@@ -79,8 +58,6 @@ Un programa intensivo para aprender **desarrollo de APIs REST modernas** usando 
 ---
 
 ## 🛠️ **Stack Tecnológico**
-
-<div align="center">
 
 | Tecnología            | Versión    | Propósito                |
 | --------------------- | ---------- | ------------------------ |
@@ -139,7 +116,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ## 📁 **Estructura del Proyecto**
 
-```
+```text
 📦 bc-codespaces/
 ├── 📁 _docs/                    # 📚 Documentación técnica
 │   ├── setup/                   # 🔧 Configuración inicial
@@ -363,8 +340,6 @@ Impact: Enables user authentication and authorization across the API
 
 ## 📈 **Métricas del Proyecto**
 
-<div align="center">
-
 | Métrica                | Valor               | Objetivo           |
 | ---------------------- | ------------------- | ------------------ |
 | **Tiempo de Setup**    | < 2 minutos         | ⚡ Inicio rápido   |
@@ -373,8 +348,6 @@ Impact: Enables user authentication and authorization across the API
 | **Uso de Free Tier**   | Optimizado 120h/mes | 💰 Costo cero      |
 | **Performance API**    | < 100ms respuesta   | ⚡ Velocidad alta  |
 
-</div>
-
 ---
 
 ## 👥 **Equipo**
@@ -382,7 +355,7 @@ Impact: Enables user authentication and authorization across the API
 ### **Instructor Principal**
 
 - 👨‍💻 **[Tu Nombre]** - Senior Full-Stack Developer
-- 📧 Email: tu-email@ejemplo.com
+- 📧 Email: <tu-email@ejemplo.com>
 - 🐙 GitHub: [@tu-github](https://github.com/tu-github)
 
 ### **Asistentes**
@@ -408,9 +381,9 @@ Este proyecto está licenciado bajo la **MIT License** - ver el archivo [LICENSE
 
 ---
 
-<div align="center">
+## 🚀 **Comienza Ahora**
 
-**🎓 Bootcamp GitHub Codespaces & FastAPI**
+### 🎓 Bootcamp GitHub Codespaces & FastAPI
 
 _Desarrollo profesional en la nube sin límites_
 
@@ -419,5 +392,3 @@ _Desarrollo profesional en la nube sin límites_
 ---
 
 ⭐ **¡Si este bootcamp te ayudó, considera darle una estrella!** ⭐
-
-</div>
